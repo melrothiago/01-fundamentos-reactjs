@@ -1,0 +1,36 @@
+todos os componentes precisam da extensão JSX
+JSX = Javascript + XML
+
+----------------------------
+
+no React não se pode ter elementos diferentes no return da funcion sem que
+tenhamos um elemento em volta deles.
+o elemento em volta é um <div></div>
+exemplo:
+funcion App() {
+    <div>
+        <Post />
+        <Post />
+        <h1>Teste</h1>
+    </div>
+}
+----------------------------
+
+Default Exports vs Named Exports
+Named Exports só importam componentes com o nome exato, caso contrário
+não exibe
+exemplo:
+export funcion App() {
+    <div>
+        <Post />
+        <Post />
+        <h1>Teste</h1>
+    </div>
+}
+
+no arquivo que  vai importar o componente
+import { App }
+
+----------------------------
+propriedades (de componentes)
+
