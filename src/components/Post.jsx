@@ -17,15 +17,14 @@ export function Post() {
                     dateTime="2023-03-02 às 22:01">
                     Publicado há 1h
                 </time>
-
-                <div className={styles.content}>
+            </header>
+            <div className={styles.content}>
                     <p>Lorem ipsum dolor amet.</p>
                     <p><a href=''> #paraMaisLoremIpsum</a>
                     {' '}
                     <a href=''>#meSigaNasRedesSociais</a>
                     </p>
                 </div>  
-            </header>
         </article>
     )
 }
