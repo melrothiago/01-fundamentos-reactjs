@@ -7,10 +7,10 @@ export function Post() {
                 <div className={styles.author}>
                     <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/63523033?v=4"
                     />
-                </div>
-                <div className={styles.authorInfo}>
-                    <strong>Thiago Melro</strong>
-                    <span>Dev Fullstack</span>
+                    <div className={styles.authorInfo}>
+                        <strong>Thiago Melro</strong>
+                        <span>Dev Fullstack</span>
+                    </div>
                 </div>
 
                 <time title="02 de Março às 22:01" 
