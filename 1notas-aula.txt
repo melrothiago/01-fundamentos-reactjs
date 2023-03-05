@@ -34,3 +34,9 @@ import { App }
 ----------------------------
 propriedades (de componentes)
 
+----------------------------
+o que se repete muito em tela deve virar componente
+
+quando vc consegue tirar algo de um componente maior
+sem que o componente maior pare de funcionar
+assim o componente maior fica mais limpo.
