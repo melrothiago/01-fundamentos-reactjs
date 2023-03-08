@@ -6,9 +6,39 @@ import './global.css';
 
 import styles from './App.module.css';
 
+const posts = [
+  {
+    id: 1,
+    author: { 
+      avatarUrl: 'src/assets/avatarThiago.jpeg',
+      name: 'Thiago Melro',
+      role: 'Dev Fullstack'
+    },
+    content: [
+      {type: 'paragraph', content: 'Lorem ipsum dolor amet.'},
+      {type: 'link', content: '#paraMaisLoremIpsum'},
+      {type: 'link', content: '#meSigaNasRedesSociais'},
+  ],
+  publishedAt: new Date('2023-03-07 19:00:00'),
+  },
+  {
+    id: 2,
+    author: { 
+      avatarUrl: 'src/assets/avatarMarco.jpeg',
+      name: 'Marco Rocha',
+      role: 'Backend Dev'
+  },
+  content: [
+    {type: 'paragraph', content: 'Lorem ipsum dolor amet.'},
+    {type: 'link', content: '#paraMaisLoremIpsum'},
+    {type: 'link', content: '#meSigaNasRedesSociais'},
+  ],
+publishedAt: new Date('2023-03-07 19:31:00'),
+  },
 
+];
 
-function App() {
+export function App() {
 
   return (
     <div>
@@ -16,8 +46,15 @@ function App() {
       <div className={styles.wrapper}>
         <Sidebar /> 
         <main>
-          <Post />
-          <Post />
+          {posts.map(post => {
+          return (
+           <Post 
+           autor={post.author}
+           content={post.content}
+           publishedAt={post.publishedAt}
+            />
+          )
+          })}
         </main>
       </div>
       
